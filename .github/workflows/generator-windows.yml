@@ -68,7 +68,7 @@ jobs:
   build-for-windows-flutter:
     name: Build Windows
     needs: [build-RustDeskTempTopMostWindow, generate-bridge, setup]
-    runs-on: ${{ matrix.job.os }}
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
@@ -682,7 +682,7 @@ jobs:
 
   cleanup:
     needs: [build-for-windows-flutter]
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     continue-on-error: true
     if: always()
     steps:
