@@ -68,7 +68,7 @@ jobs:
   build-for-windows-flutter:
     name: Build Windows
     needs: [build-RustDeskTempTopMostWindow, generate-bridge, setup]
-    runs-on: self-hosted
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
@@ -460,7 +460,7 @@ jobs:
       - name: Build rustdesk
         run: |
           # Windows: build RustDesk
-          python3 .\build.py --portable --hwcodec --flutter --vram --skip-portable-pack
+          python3 .\build.py --portable --flutter --skip-portable-pack
           mv ./flutter/build/windows/x64/runner/Release ./rustdesk
  
           # Download usbmmidd_v2.zip and extract it to ./rustdesk
