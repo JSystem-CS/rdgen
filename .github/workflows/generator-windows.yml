@@ -690,3 +690,8 @@ jobs:
         uses: geekyeggo/delete-artifact@v5
         with:
           name: encrypted-secrets-zip
+
+      - name: Setup NuGet and Vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: "a42af01b72c28a8e0d7a12480ea054f7ddedde0a"
