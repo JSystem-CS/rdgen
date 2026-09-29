@@ -46,11 +46,11 @@ def generate_custom_client(params, full_url):
     urlLink = params.get('urlLink', '')
     downloadLink = params.get('downloadLink', '')
     if not server:
-        server = 'rs-ny.rustdesk.com' #default rustdesk server
+        server = '95.230.146.172' #default rustdesk server
     if not serverPort:
         serverPort = '21116' #default rustdesk rendezvous port
     if not key:
-        key = 'OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=' #default rustdesk key
+        key = 'RHyDSyTyyFeSyf0CQ+5fC94pVP7QaCYbG3vGd11Db7E=' #default rustdesk key
     if not apiServer:
         apiServer = server+":21114"
     if not urlLink:
