@@ -424,7 +424,7 @@ jobs:
                gcc \
                git \
                g++ \
-               imagemagick \
+               imageconvert \
                libayatana-appindicator3-dev \
                libasound2-dev \
                libclang-10-dev \
@@ -1098,7 +1098,7 @@ jobs:
                gcc \
                git \
                g++ \
-               imagemagick \
+               imageconvert \
                libayatana-appindicator3-dev \
                libasound2-dev \
                libclang-10-dev \
